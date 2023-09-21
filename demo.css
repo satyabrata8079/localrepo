@@ -4,13 +4,14 @@
 }
 
 header{
-    
+    display: flex;
     background-color: aqua;
     padding: 15px;
-    
+    justify-content: end;
 }
 
 nav a{
+    
     margin: 25px;
     text-decoration: none;
 }
@@ -25,6 +26,8 @@ nav a{
     height: 50vh;
     width: 100%;
     border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
 }
 #box1{
     position: static;
@@ -46,6 +49,6 @@ nav a{
 }
 footer{
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     background-color: aqua;
 }
