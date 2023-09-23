@@ -26,6 +26,8 @@ nav a{
     border: 2px solid;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #box1{
     position: static;
