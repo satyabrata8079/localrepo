@@ -14,41 +14,59 @@ nav a{
     text-decoration: none;
 }
 .box{
-    height: 70px;
-    width: 70px;
+    position: relative;
+    height: 300px;
+    width: 200px;
     background-color: darkslategray;
-    margin: 5px;
+    margin: 20px;
+    transform: skewy(20deg);
+    border: 1px solid ;
+    animation: design 1s ease-in-out 1s infinite alternate ;
 }
 .container{
     
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     border: 2px solid;
     display: flex;
+    justify-content: end;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
-#box1{
-    position: static;
+.box1{
+    background-image: url(satya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-#box2{
-    background-color: rgb(111, 119, 233);
-    position: absolute;
-    top: 2em;
-    left: 40px;
+.box2{
+    background-image: url(default-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 10px;
+    
 }
-#box3{
-    position: relative;
-    top: 50px;
-    left: 50px;
+.box3{
+    background-image: url(satya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-#box4{
-    position: fixed;
-    right: 10px;
-}
+
 footer{
     position: fixed;
     bottom: 10px;
     background-color: aqua;
 }
+@keyframes design {
+    from{
+        transform: rotateX(45deg) ;
+        right: 10px;
+    }
+    to{
+        transform: rotateZ(20deg);
+        right: 100px;
+    }
+}
+
